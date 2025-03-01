@@ -1,5 +1,5 @@
 # saga-camel-quarkus
-Implementation of the Shop Application using the Camel pattern with Quarkus - Part 02/03
+Let Camel and Quarkus take care of their sagas - Part 02/03
 
 Main Objective: Create a Shop Application using the Camel pattern that controls Orders and his Credit Values
 
