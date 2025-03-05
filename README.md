@@ -14,4 +14,4 @@ Camel Direct - camel-quarkus-direct
 Camel Bean - camel-quarkus-bean
 
 Testing saga-camel-order Application
-curl curl localhost:8080/saga-camel-order/test
+curl curl localhost:8080/saga-camel/test
