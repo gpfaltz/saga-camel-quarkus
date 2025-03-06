@@ -19,6 +19,7 @@ public class CreditService {
 
 	public void newOrderValue(@Header("id") Long orderId, @Header("value") int value) {
 		if (value > totalCredit) {
+			this.totalCredit = 100; //for the sake of keep testing...
 			throw new IllegalStateException("insufficient funds");
 		}
 

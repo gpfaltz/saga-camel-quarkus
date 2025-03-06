@@ -8,6 +8,7 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
+import jakarta.ws.rs.core.Response.Status;
 
 @Path("saga-camel-order")
 public class CamelOrderResource {
@@ -28,10 +29,10 @@ public class CamelOrderResource {
 			buy(++id, 30);
 			buy(++id, 25);
 
-			return Response.ok().entity("All good").build();
+			return Response.ok().build();
 
 		} catch (Exception e) {
-			return Response.status(500).entity("Something went wrong").build();
+			return Response.status(Status.NOT_ACCEPTABLE).entity(e.getMessage()).build();
 		}
 	}
 
